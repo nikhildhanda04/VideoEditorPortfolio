@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Over';
+    src: url('./assets/fonts/Over.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Hatten';
+    src: url('./assets/fonts/HATTEN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url('./assets/fonts/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

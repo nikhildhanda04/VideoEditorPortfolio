@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between mb-[3vw] px-[7vw] font-[oswald] text-xl">
+    <div className="flex flex-row justify-between mb-[3vw] px-[7vw] font-[oswald] text-[1.2vw]">
         <div className="flex flex-col">
             <div className="text-gray-600">
                 Email
@@ -19,10 +19,14 @@ const Footer = () => {
                 Socials
             </div>
             <div className="flex flex-row gap-3">
-                <a href="https://www.linkedin.com/in/nikkhil-s-dhanda-00241a24a/">
+                <a 
+                className="hover:text-blue-800"
+                href="https://www.linkedin.com/in/nikkhil-s-dhanda-00241a24a/">
                     LinkedIn
                 </a>
-                <a href="https://www.instagram.com/nikhildhanda005">
+                <a 
+                className="hover:text-blue-800"
+                href="https://www.instagram.com/nikhildhanda005">
                 Instagram
                 </a>
             </div>

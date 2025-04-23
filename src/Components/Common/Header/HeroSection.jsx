@@ -1,3 +1,18 @@
+const YouTubeEmbed = ({ videoId }) => {
+    return (
+      <div className="w-full h-full aspect-video">
+        <iframe
+          className="w-full h-full rounded-xl"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          title="YouTube video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+  };
+
 const HeroSection = () => {
   return (
     <div className="mb-[19vh]">
@@ -22,7 +37,7 @@ const HeroSection = () => {
 
     <div className="flex flex-row px-[10vw] gap-[4vw]">
         <div className="w-full flex-1 aspect-video bg-gray-300 rounded-lg flex items-center justify-center text-gray-600 text-lg">
-        Video Placeholder
+        <YouTubeEmbed videoId="TtS2CcNWxxU" />
         </div>
         <div className="flex flex-1 font-[oswald] text-[1.2vw] items-center">
         My name is Nikhil Dhanda, and I am a professional video editor with over three years of experience.

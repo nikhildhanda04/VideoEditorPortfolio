@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between mb-[3vw] px-[7vw] font-[oswald] text-[1.2vw]">
+    <div className="flex flex-row justify-between mb-[3vw] px-[7vw] font-[oswald] text-[2vw] md:text-[1.2vw]">
         <div className="flex flex-col">
             <div className="text-gray-600">
                 Email

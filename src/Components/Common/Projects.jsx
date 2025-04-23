@@ -1,3 +1,5 @@
+import { motion} from "framer-motion";
+
 const YouTubeEmbed = ({ videoId }) => {
   return (
     <div className="w-full h-full aspect-video">
@@ -15,12 +17,20 @@ const YouTubeEmbed = ({ videoId }) => {
 
 const Projects = () => {
   return (
-    <div className="mb-[19vh]">
-      <div className="font-[over] px-[5vw] text-[4vw] mb-5">
+    <div className="mb-[20vw] md:mb-[10vw]">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+      className="font-[over] px-[5vw] text-[4vw] mb-5">
         ---Projects
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-3 gap-6 px-[12vw]">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+      className="grid grid-cols-3 gap-6 px-[12vw]">
         {/* First row */}
         <div className="col-span-2">
           <YouTubeEmbed videoId="TtS2CcNWxxU" />
@@ -58,7 +68,7 @@ const Projects = () => {
         <div className="col-span-2">
           <YouTubeEmbed videoId="sNPnbI1arSE" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

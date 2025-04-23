@@ -1,3 +1,4 @@
+import { motion} from "framer-motion";
 const YouTubeEmbed = ({ videoId }) => {
     return (
       <div className="w-full h-full aspect-video">
@@ -17,22 +18,38 @@ const YouTubeEmbed = ({ videoId }) => {
 const Skills = () => {
   return (
     <>
-    <div className="mb-[4vw]">
-    <div className="font-[over] px-[5vw] text-[4vw] mb-5">
+    <div className="mb-[15vw]">
+    <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+    className="font-[over] px-[5vw] text-[4vw] mb-5">
         ---Skills 
       
-    </div>
+    </motion.div>
     <div>
-    <div className="flex flex-row px-[7vw] gap-[4vw]">
-        <div className="w-full flex-wrap aspect-video bg-gray-300 rounded-3xl flex items-center justify-center text-gray-600 text-lg">
+    <div className="flex flex-col md:flex-row px-[7vw] gap-[4vw]">
+        <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.1, ease: 'easeIn' }}  
+        className="w-full flex-wrap aspect-video bg-gray-300 rounded-3xl flex items-center justify-center text-gray-600 text-lg">
         <YouTubeEmbed videoId="TtS2CcNWxxU" />
-        </div>
+        </motion.div>
 
         <div className="items-center justify-center">
-            <div className="mb-5 font-[Hatten] text-4xl">
+            <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+            className="mb-5 font-[Hatten] text-4xl">
                 Tools
-            </div>
-        <div className="flex flex-wrap gap-4 font-[oswald] text-[1.2vw] ">
+            </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+        className="flex flex-wrap gap-4 font-[oswald] md:text-[1.2vw] ">
             <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">
                 Adobe After Effects
             </div>
@@ -42,12 +59,20 @@ const Skills = () => {
             <div className="border border-black  px-4 py-2 rounded-full hover:bg-black hover:text-white">
                 VN
             </div>
-        </div>
+        </motion.div>
 
-        <div className="my-7     font-[Hatten] text-4xl">
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+        className="my-7     font-[Hatten] text-4xl">
                 Video-Editing Skills
-            </div>
-            <div className="flex flex-wrap gap-4 font-[oswald] text-[1.2vw]">
+            </motion.div>
+            <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: 'easeIn' }}  
+            className="flex flex-wrap gap-4 font-[oswald] md:text-[1.2vw]">
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Motion-Graphics</div>
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Text Work</div>
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Color Grading</div>
@@ -55,7 +80,7 @@ const Skills = () => {
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Animation</div>
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Motion Tracking</div>
                 <div className="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white">Green Screen</div>
-            </div>
+            </motion.div>
         
         </div>
     </div>

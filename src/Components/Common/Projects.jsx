@@ -1,5 +1,4 @@
-import { motion} from "framer-motion";
-
+import {motion} from "framer-motion"
 const YouTubeEmbed = ({ videoId }) => {
   return (
     <div className="w-full h-full aspect-video">
@@ -7,6 +6,21 @@ const YouTubeEmbed = ({ videoId }) => {
         className="w-full h-full rounded-xl"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const YouTubeShortsEmbed = ({ videoId }) => {
+  return (
+    <div className="w-full h-full ">
+      <iframe
+        className="w-full h-full rounded-xl"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube Shorts"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -33,40 +47,31 @@ const Projects = () => {
       className="grid grid-cols-3 gap-6 px-[12vw]">
         {/* First row */}
         <div className="col-span-2">
-          <YouTubeEmbed videoId="TtS2CcNWxxU" />
+          <YouTubeEmbed videoId="0d_6orfjxEM " />
         </div>
         <div>
-          <YouTubeEmbed videoId="tQBexrTSmfA " />
+          <YouTubeShortsEmbed videoId="Siq6l9j6C5s" />
         </div>
 
         {/* Second row */}
         <div>
-          <YouTubeEmbed videoId="hxEVOypXM5M " />
+          <YouTubeEmbed videoId="eZNsqSROh9o " />
         </div>
         <div>
-          <YouTubeEmbed videoId="M7lc1UVf-VE" />
+          <YouTubeEmbed videoId="-YOWk6NNp5g " />
         </div>
         <div>
-          <YouTubeEmbed videoId="eVTXPUF4Oz4" />
+          <YouTubeEmbed videoId="1wQ6lw2501A " />
         </div>
 
         {/* Third row */}
-        <div>
-          <YouTubeEmbed videoId="3JZ_D3ELwOQ" />
-        </div>
-        <div>
-          <YouTubeEmbed videoId="ktvTqknDobU" />
-        </div>
-        <div>
-          <YouTubeEmbed videoId="fJ9rUzIMcZQ" />
-        </div>
 
         {/* Fourth row */}
         <div className="col-span-1">
-          <YouTubeEmbed videoId="L_jWHffIx5E" />
+          <YouTubeShortsEmbed videoId="UbrqupLw7To" />
         </div>
         <div className="col-span-2">
-          <YouTubeEmbed videoId="sNPnbI1arSE" />
+          <YouTubeEmbed videoId="IFmUNaK_NiY " />
         </div>
       </motion.div>
     </div>

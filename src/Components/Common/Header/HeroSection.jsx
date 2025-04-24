@@ -38,10 +38,7 @@ const HeroSection = () => {
   return (
     <div className="mb-[20vw] md:mb-[10vw]">
       <div className="p-[2vw] px-[4vw] font-[Oswald] flex gap-[2vw] flex-row justify-end text-gray-800 text-[2vw]">
-        <div className=" hover:underline hover:text-black">About Me</div>
-        <div className=" hover:underline hover:text-black">Skills</div>
-        <div className=" hover:underline hover:text-black">Projects</div>
-        <div className=" hover:underline hover:text-black">Contact me</div>
+        <span>Welcome! I make your videos reach the {""} </span>{""}<span className="text-yellow-500 font-semibold">potential they deserve!</span>
       </div>
 
       <motion.div 
